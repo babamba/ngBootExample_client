@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inline_H {
+  display: inline-block;
+}
+
+/* 
+.container>* {
+  width: 50%;
+} */

@@ -1,0 +1,25 @@
+<div *ngIf="hero">
+  <div>
+    <h2 class="inline_block">{{hero.name | uppercase }} Details</h2>
+
+    <button mat-icon-button color="primary" (click)="goBack()" aria-label="Example icon-button with a cached icon">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+
+  </div>
+
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <div class="example-container">
+      <mat-form-field class="example-full-width">
+        <input matInput [(ngModel)]="hero.name" placeholder="name" />
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput [(ngModel)]="hero.email" placeholder="e-mail" />
+      </mat-form-field>
+      <button mat-raised-button color="basic" (click)="save()">
+        Save
+      </button>
+    </div>
+  </div>
+</div>

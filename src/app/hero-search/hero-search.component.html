@@ -1,0 +1,14 @@
+<div id="search-component">
+  <h4><label for="search-box">Hero Search</label></h4>
+
+  <!-- search() 메소드는 텍스트 입력박스에서 발생하는 입력 이벤트와 바인딩되었기 때문에, 
+    입력 이벤트가 발생할 때마다 실행 -->
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  <ul class="search-result">
+    <li *ngFor="let hero of heroes$ | async">
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>

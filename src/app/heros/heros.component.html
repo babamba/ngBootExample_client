@@ -1,0 +1,48 @@
+<div>
+
+  <mat-card-title>
+    <h2>My Heroes</h2>
+  </mat-card-title>
+  <ul class="heroes">
+    <li *ngFor="let hero of heroes">
+      <div>
+        <a routerLink="/detail/{{hero.id}}">
+          <span class="badge">{{hero.id}}</span> {{ hero.name }}
+
+        </a>
+        <button mat-icon-button title="delete hero" (click)="delete(hero)" class="button"
+          aria-label="Example icon-button with a cached icon">
+          <mat-icon>highlight_off</mat-icon>
+        </button>
+      </div>
+
+      <!-- <button mat-icon-button color="primary" (click)="goBack()" aria-label="Example icon-button with a cached icon">
+          <mat-icon>arrow_back</mat-icon>
+        </button> -->
+    </li>
+  </ul>
+
+</div>
+
+<div>
+  <div class="example-container">
+    <mat-form-field class="example-full-width">
+      <input matInput #heroName placeholder="write hero name" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput #heroEmail placeholder="write hero e-mail" />
+    </mat-form-field>
+
+    <!-- (click) 이벤트를 감지하면 현재값을 인자로 전달하면서 add() 함수를 실행하고, 입력 필드를 비웁니다. -->
+    <button mat-stroked-button (click)="add(heroName.value, heroEmail.value); heroName.value='';  heroEmail.value=''">
+      ADD
+    </button>
+  </div>
+
+
+
+
+</div>
+
+<!-- Angular가 제공하는 프로퍼티 바인딩 -->
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
