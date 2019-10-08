@@ -1,6 +1,13 @@
-# AngularHero
+# ngBoot exam
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+ 1. node js 및 npm 설치
+ 2. angular-cli 설치   
+    npm install -g @angular/cli 
+ 
+ 3. git clone https://github.com/babamba/ngBootExample_client.git
+ 4. 터미널 해당 폴더에서 npm i 실행
+ 5. ng serve 로 클라이언트 실행 및 테스트
+ 
 
 ## Development server
 
