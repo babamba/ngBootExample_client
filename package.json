@@ -2,12 +2,14 @@
   "name": "angular-hero",
   "version": "0.0.0",
   "scripts": {
+    "install": "npm install -g @angular/cli",
     "ng": "ng",
     "start": "ng serve --proxy-config ./proxy.config.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+
   },
   "private": true,
   "dependencies": {
