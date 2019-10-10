@@ -6,6 +6,10 @@ import { Location } from "@angular/common";
 import { Hero } from "../model/hero.model";
 import { HeroService } from "../service/hero/hero.service";
 
+// selector는 사용될 태그이고,
+// templateUrl은 selector에 담을 html code,
+// styleUrls는 css를 맡는다.
+
 @Component({
   selector: "app-hero-detail",
   templateUrl: "./hero-detail.component.html",

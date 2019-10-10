@@ -26,6 +26,7 @@ import { HeroSearchComponent } from "./hero-search/hero-search.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
+  // declarations : 우리가 만든 클래스를 다른 파일에서 사용할수 있게끔 선언한다.
   declarations: [
     AppComponent,
     HerosComponent,
@@ -34,6 +35,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     DashboardComponent,
     HeroSearchComponent
   ],
+  //imports : angular의 모듈에서 사용되는 클래스를 다른 파일에서 사용할수 있게끔 선언
   imports: [
     BrowserModule,
     AppRoutingModule,

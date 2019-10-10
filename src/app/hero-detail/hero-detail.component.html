@@ -1,14 +1,22 @@
 <div *ngIf="hero">
   <div>
     <h2 class="inline_block">{{hero.name | uppercase }} Details</h2>
-
     <button mat-icon-button color="primary" (click)="goBack()" aria-label="Example icon-button with a cached icon">
       <mat-icon>arrow_back</mat-icon>
     </button>
 
   </div>
 
+
+
   <div><span>id: </span>{{hero.id}}</div>
+  <!-- {{ }} 를 이용한 단방향 Interpolation 바인딩 
+      단방향 바인딩의 경우 실시간으로 변하는 정보에대해서 원하는 결과를 얻지못함-->
+
+  <!-- ngModel은 html과 ts가 양방향으로 묶여있다는 개념 양방향 바인딩 
+       양방향 바인딩은 프로퍼티와 이벤트를 동시에 바인딩한다고 생각하면됨.
+       실시간 결과 반영
+  -->
   <div>
     <div class="example-container">
       <mat-form-field class="example-full-width">

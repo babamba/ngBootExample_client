@@ -47,6 +47,7 @@ export class HerosComponent implements OnInit {
     });
   }
 
+  // 타입스크립트 형식 => delete(인수명 / 인수타입) : 리턴 타입
   delete(hero: Hero): void {
     this.heroes = this.heroes.filter(h => h !== hero);
     this.heroService.deleteHero(hero).subscribe();
